@@ -79,41 +79,6 @@ body, #content_wrap, #search input[type=text], #cart_n_stuff {
 <script type="text/javascript" src="/wp-content/themes/village/galleria/galleria-1.2.5.min.js"></script>
 <script type="text/javascript" src="/wp-content/themes/village/jscript/jquery.masonry.min.js"></script>
 
-<script type="text/javascript"> 
-
-var ajaxurl = "http://rickandmandy.com/wp-admin/admin-ajax.php/wp-admin/admin-ajax.php";
-var cf_name = "Your Name...";
-var cf_email = "Your Email...";
-var cf_phone = "Your Phone...";
-var cf_website = "";
-
-function getInternetExplorerVersion()
-{
-  var rv = -1; // Return value assumes failure.
-  if (navigator.appName == 'Microsoft Internet Explorer')
-  {
-    var ua = navigator.userAgent;
-    var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
-    if (re.exec(ua) != null)
-      rv = parseFloat( RegExp.$1 );
-  }
-  return rv;
-}
-function checkVersion()
-{
-  var msg = "You're not using Internet Explorer.";
-  var ver = getInternetExplorerVersion();
-
-  if ( ver > -1 )
-  {
-    if ( ver <= 8.0 ) return true;
-  }
-  
-  return false;
-  
-}
-
-</script>
 
 <script type="text/javascript" src="/wp-content/themes/village/jscript/jquery.custom.js"></script>
 
@@ -231,17 +196,7 @@ document.oncontextmenu=new Function("alert(message);return false");
 	
 	<div id="cart_n_stuff">
 		
-		<div id="search">
 		
-			<form method="get" action="/">
-			
-				<input type="submit" value="" />
-				<input type="text" name="s" value="explore the site..." class="search_input" onfocus="if (this.value == 'explore the site...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'explore the site...'}" /> 				
-				
-			
-			</form>
-		
-		</div>	
 	
 						
 		<div id="social_icons">
@@ -286,47 +241,6 @@ Rick and Mandy</h6>
 <p> </div> <div class="col_two_third_left last"> <img src="/wp-content/uploads/2012/02/welcomepic.png" alt="" /> </div><div class="clear"></div></p>
  
 <!-- You can start editing here. -->
-
-<div id="comments">
- 
- 
-<!-- If comments are open, but there are no comments. -->
- 
- 
- 
-<div id="respond">
- 
-<h5 class="leave_reply" style="padding-top: 30px;">Leave A Reply</h5>
- 
- 
-<form action="/wp-comments-post.php" method="post" id="commentform">
- 
- 
-<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />
-<label for="author"><small>Name: (required)</small></label></p>
- 
-<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' />
-<label for="email"><small>Email: (required)</small></label></p>
- 
-<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
-<label for="url"><small>Website</small></label></p>
- 
- 
-<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
- 
-<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
- 
-<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
-<input type='hidden' name='comment_post_ID' value='269' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-</p>
-<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="f69fd54192" /></p> 
-</form>
- 
-</div>
- 
-
-</div>
 
 <div class="clear"></div>
 
